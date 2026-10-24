@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta http-equiv="content-type" content="text/html;charset=utf-8"></meta><link href="v8help://service_book/service_style" type="text/css" rel="stylesheet"></link><meta content="MSHTML 6.00.2900.3354" name="GENERATOR"></meta></head><body>
+<h1 class="">Редактор формули розрахунку</h1>
+<p class="">Редактор формул розрахунку дає змогу вводити математичні формули розрахунку нарахувань або утримань, за якими здійснюватиметься розрахунок зарплати.</p>
+<p class="">Для опису формул розрахунку можна використовувати:</p>
+<ul><li>
+<div class=""><a href="#_Идентификаторы">Ідентифікатори показників розрахунку;</a></div>
+</li><li>
+<div class=""><a href="#_Простые">Прості арифметичні дії:</a> "<font color="#ff0000" size="3"><strong>+</strong></font>", "<font color="#ff0000" size="3"><strong>-</strong></font>" , "<font color="#ff0000" size="3"><strong>/</strong></font>" ,"<font color="#ff0000" size="3"><strong>*</strong></font>", у тому числі з використанням дужок <font color="#ff0000">()</font>;</div>
+</li><li>
+<div class=""><a href="#_Математические">Математичні фукнції</a> такі як: <font color="#0000ff"><a href="#_Макс">Макс</a></font><font color="#ff0000">()</font>, <font color="#0000ff"><a href="#_Мин">Мин</a></font><font color="#ff0000">()</font>, <font color="#0000ff"><a href="#_Окр">Окр</a></font><font color="#ff0000">()</font>, <font color="#0000ff"><a href="#_Цел">Цел</a></font><font color="#ff0000">()</font>;</div>
+</li><li>
+<div class=""><a href="#_Конструкцию">Конструкція умови </a><font color="#ff0000">?(,,)</font>;</div>
+</li><li>
+<div class=""><a href="#_Функция">Функцію ОценитьПо<font color="#ff0000">()</font>.</a></div></li></ul><p class="">
+</p><hr></hr><p></p>
+<h2 class="">Ідентифікатори показників розрахунку</h2>
+<p class="">Показники розрахунку - це вхідні значення для розрахунку. Над цими значеннями виконуються маніпуляції для розрахунку результату нарахування. Показники вводяться користувачем під час проведення тих чи інших документів, вводяться в регістрі відомостей "Значення показників схем мотивації" або завантажуються автоматично. </p>
+<p class="">Приклади показників:</p>
+<ul><li>
+<div class="">Час у днях;</div>
+</li><li>
+<div class="">Норма часу в днях;</div>
+</li><li>
+<div class="">Виторг;</div>
+</li><li>
+<div class="">Відсоток.</div></li></ul><p class="Usual">Ідентифікатор показника - символьне представлення показника, яке не містить роздільників і спеціальних символів.</p>
+<p class="">Приклади ідентифікаторів показника:</p>
+<ul><li>
+<div class="">ВремяВДнях;</div>
+</li><li>
+<div class="">НормаВремениВДнях;</div>
+</li><li>
+<div class="">Выручка;</div>
+</li><li>
+<div class="">Процент.</div></li></ul><p class="">Усі доступні для використання ідентифікатори знаходяться в таблиці "Показники" цього редактора формул.</p>
+<h2 class="">
+<hr></hr></h2>
+<h2 class=""><a name="_Простые">Прості арифметичні дії</a></h2>
+<p class="">Під час опису формул розрахунку можна використовувати арифметичні дії "<font color="#ff0000" size="3"><strong>+</strong></font>", "<font color="#ff0000" size="3"><strong>-</strong></font>", "<font color="#ff0000" size="3"><strong>/</strong></font>", "<font color="#ff0000" size="3"><strong>*</strong></font>", у тому числі з використанням дужок <font color="#ff0000">()</font>.</p>
+<p class="">Приклад: <font color="#0000ff">Выручка</font> <font color="#ff0000">*</font> <font color="#0000ff">Процент</font></p>
+<p class="">
+</p><hr></hr><p></p>
+<h2 class=""><a name="_Математические">Математичні функції</a> </h2>
+<div class="V8SH_heading"> </div>
+<div class="V8SH_heading">
+<div class="V8SH_heading"><strong><a name="_Макс">Макс</a></strong>(&lt;Значення 1&gt;, ..., &lt;Значення N&gt;) </div>
+<p></p>
+<div class="V8SH_chapter">&lt;Значення 1&gt;, ..., &lt;Значення N&gt; - набір значень для порівняння. <br>Повертається максимальне з переданих у функцію значень. </div>
+<div class="V8SH_chapter"> </div>
+<div class="V8SH_chapter">Приклад:</div>
+<div class="V8SH_chapter"><font color="#0000ff">Макс</font><font color="#ff0000">(</font><font color="#0000ff">Оклад</font><font color="#ff0000">/</font><font color="#0000ff">НормаДней</font><font color="#ff0000">*</font><font color="#0000ff">ОтработаноДней</font><font color="#ff0000">,</font> <font color="#0000ff">Выручка</font><font color="#ff0000">*</font><font color="#0000ff">Процент</font><font color="#ff0000">)</font></div>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt"> </p>
+<div class="V8SH_heading"><strong><a name="_Мин">Мин</a></strong>(&lt;Значення 1&gt;, ..., &lt;Значення N&gt;) </div>
+<div class="V8SH_chapter">&lt;Значення 1&gt;, ..., &lt;Значення N&gt; - набір значень для порівняння. <br>Повертається мінімальне з переданих у функцію значень. </div>
+<div class="V8SH_chapter"> </div>
+<div class="V8SH_chapter">Приклад:</div>
+<div class="V8SH_chapter"><font color="#0000ff">Мин</font><font color="#ff0000">(</font><font color="#0000ff">Оклад</font><font color="#ff0000">/</font><font color="#0000ff">НормаДней</font><font color="#ff0000">*</font><font color="#0000ff">ОтработаноДней</font><font color="#ff0000">,</font> <font color="#0000ff">Выручка</font><font color="#ff0000">*</font><font color="#0000ff">Процент</font><font color="#ff0000">)</font></div>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt"> </p></div>
+<div class="V8SH_codesample">
+<div class="V8SH_heading"><a name="_Окр"><strong>Окр</strong></a><strong>(</strong>&lt;Число&gt;, &lt;Розрядність&gt;<strong>)</strong></div>
+<div class="V8SH_chapter"> </div>
+<div class="V8SH_rubric">&lt;Розрядність&gt; - визначає число знаків дробової частини, до яких проводиться округлення. Якщо параметр від'ємний, то число округлюється до відповідного розряду в цілій частині, починаючи з молодших розрядів.<br>Значення за замовчуванням: 0 </div>
+<div class="V8SH_rubric"> </div>
+<div class="V8SH_chapter">Приклад:</div>
+<div class="V8SH_codesample"><font color="#0000ff">Окр</font><font color="#ff0000">(</font><font color="#0000ff">ОкладПоДням</font><font color="#ff0000">*</font><font color="#0000ff">ОтработаноДней</font><font color="#ff0000">,</font> 2<font color="#ff0000">)</font><br><br><div class="V8SH_codesample"> </div>
+<div class="V8SH_heading"><a name="_Цел"><strong>Цел</strong></a><strong>(</strong>&lt;Число&gt;<strong>)</strong></div>
+<div class="V8SH_heading"><strong></strong> </div>
+<div class="V8SH_rubric">&lt;Число&gt; - вихідне число або показник.</div>
+<div class="V8SH_rubric"> </div>
+<div class="V8SH_chapter">Приклад:</div>
+<div class="V8SH_codesample"><font color="#0000ff">Цел</font><font color="#ff0000">(</font><font color="#0000ff">Выручка</font><font color="#ff0000">*</font><font color="#0000ff">Процент</font><font color="#ff0000">);</font></div>
+<div class="V8SH_codesample"> </div>
+<div class="V8SH_codesample">
+<hr></hr></div>
+<h2 class=""><a name="_Конструкцию">Конструкція умови </a><font color="#ff0000">?(,,)</font></h2>
+<p><b><u>? (обчислити вираз за умовою)</u></b><br><b>Синтаксис:<br></b>?(&lt;Логічний вираз&gt;, &lt;Вираз 1&gt;, &lt;Вираз 2&gt;)<br><b>Параметри:<br></b><u>&lt;Логічний вираз&gt;</u><br>Логічний вираз, результат обчислення якого визначає один із результуючих виразів, які будуть обчислені. Якщо результат його обчислення Істина, то буде обчислюватися &lt;Вираз 1&gt;.Якщо результат Хибність - то &lt;Вираз 2&gt;.<br><u>&lt;Вираз 1&gt;</u><br>Результуючий вираз, який обчислюватиметься, якщо результат логічного виразу Істина..<br><u>&lt;Вираз 2&gt;<br></u>Результуючий вираз, який обчислюватиметься, якщо результат логічного виразу Хибність.<br><b>Значення, що повертається:</b><br>Результат обчислення одного з результуючих виразів. <br><b>Опис:<br></b>Дозволяє обчислити один із двох заданих виразів залежно від результату обчислення логічного виразу.
+</p></div>
+<h3 class="">Приклад застосування конструкції умови для опису формул способів розрахунку:</h3>
+<p class="">Потрібно запровадити надбавку за вислугу років, яка розраховується як відсоток від окладу, при цьому відсоток надбавки залежить від вислуги років і визначається за шкалою:</p>
+<p class="">
+</p><table style="WIDTH: 208px; HEIGHT: 124px" bordercolor="#000000" width="208" border="1"><tbody><tr><td>з    </td>
+<td>по  </td>
+<td>відсоток</td></tr><tr><td>0</td>
+<td>5</td>
+<td>0</td></tr><tr><td>5</td>
+<td>10</td>
+<td>10</td></tr><tr><td>10</td>
+<td>20</td>
+<td>20</td></tr><tr><td>20</td>
+<td>99</td>
+<td>30</td></tr></tbody></table><p class="">Формула матиме такий вигляд:</p>
+<p class=""><font color="#0000ff">Оклад</font> <font color="#ff0000">* ?(</font><font color="#0000ff">СтажВГодах</font><font color="#ff0000">&lt;<font color="#000000">5</font>, <font color="#000000">0</font>, ?(</font><font color="#0000ff">СтажВГодах</font><font color="#ff0000">&lt;<font color="#000000">10</font>, <font color="#000000">10</font>, ?(</font><font color="#0000ff">СтажВГодах</font><font color="#ff0000">&lt;<font color="#000000">20</font>, <font color="#000000">20</font>, <font color="#000000">30</font>)))</font></p>
+<h2 class="">
+<hr></hr></h2>
+<h2 class=""><a name="_Функция">Функція ОценитьПО()</a></h2>
+<div class="V8SH_chapter">Синтаксис:<br><strong>ОценитьПО</strong>(&lt;Значення&gt;, &lt;Шкала оцінки&gt;)</div>
+<div class="V8SH_chapter">Параметри:</div>
+<div class="V8SH_chapter">&lt;Значення&gt; - показник, який оцінюється за оціночною шкалою</div>
+<div class="V8SH_chapter">&lt;Шкала оцінки&gt; - показник із типом шкала, за якою оцінюємо значення</div>
+<div class="V8SH_chapter">Функція виконує оцінку значення за шкалою оцінки.</div>
+<div class="V8SH_chapter">
+<hr></hr></div>
+<div class="V8SH_chapter"><strong>Увага! Використання цієї функції знижує продуктивність роботи програми</strong><strong>!</strong></div>
+<div class="V8SH_chapter"><strong>Функція залишена для спадкоємності з попередніми версіями.</strong></div>
+<div class="V8SH_chapter"><strong>Рекомендується замість цієї функції використовувати конструкцію умови <font color="#ff0000">?(,,)</font></strong></div>
+<div class="V8SH_chapter">
+<hr></hr></div></div></body></html>

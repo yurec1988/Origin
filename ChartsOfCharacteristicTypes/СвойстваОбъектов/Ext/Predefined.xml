@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PlanOfCharacteristicKindPredefinedItems" version="2.12">
+	<Item id="4592fd78-7c4a-4240-a1ea-469f4a00b86b">
+		<Name>ДатаВисновка</Name>
+		<Code>000000006</Code>
+		<Description>Дата висновка</Description>
+		<Type>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7fa762a7-d69e-4ecb-a37d-38ccb0ad8eaf">
+		<Name>ДатаСертификата</Name>
+		<Code>000000004</Code>
+		<Description>Дата сертификата</Description>
+		<Type>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="335a7d66-7a71-417c-a5ab-22a4f360d383">
+		<Name>НомерВисновка</Name>
+		<Code>000000005</Code>
+		<Description>Номер висновка</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>50</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cf3ab8c2-b2b4-4a20-b117-0d571723d7b2">
+		<Name>НомерСертификата</Name>
+		<Code>000000003</Code>
+		<Description>Номер сертификата</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>50</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ccd4286d-ffa4-4d70-bf40-eacd2e1ed168">
+		<Name>Партия</Name>
+		<Code>000000001</Code>
+		<Description>Партия</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ВозвратТоваровОтПокупателя</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ПриходныйОрдерНаТовары</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ОприходованиеТоваров</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ПоступлениеТоваровУслуг</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="dfb5cdde-a537-401d-87c6-ea4cb32cf529">
+		<Name>Серия</Name>
+		<Code>000000002</Code>
+		<Description>Серия</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СерииНоменклатуры</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
